@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.blackops {
+    font-family: 'Black Ops One', cursive;
+}
+
+.tt {
+    bottom: 0.5%;
+    text-align: center;
+    width: 100%;
+    transition: 0.7s ease-in;
+    bottom: 0%;
+}
+
+.xx {
+    bottom: -50%;
+    text-align: center;
+    width: 100%;
+    transition: 0.7s ease;
+}
+
+.arrow-3 {
+    animation: k3 1s linear infinite alternate;
+    color: rgb(225, 194, 49);
+    background: red;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+@keyframes k3 {
+    from {
+        transform: translate(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.arrow-4 {
+    animation: k4 1s linear infinite alternate;
+    color: rgb(225, 194, 49);
+    background: red;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+@keyframes k4 {
+    from {
+        transform: translate(0%);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+}
+
+.setCallNumber {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(15%, 0%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #010101;
+}
+
+.subHomeL2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+p {
+    text-align: justify;
+}
+
+
+
+@media (max-width: 334px) {
+    .setCallNumber {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 298px) {
+    .setCallNumber {
+        font-size: 1.4rem;
+    }
+}
+
+.data-animation {
+    animation: srb 1s linear infinite;
+}
+
+@keyframes srb {
+    0% {
+
+        scale: 100%;
+    }
+
+    50% {
+
+        scale: 110%;
+
+    }
+
+}
