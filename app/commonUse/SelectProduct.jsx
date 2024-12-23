@@ -1,3 +1,4 @@
+import { useFetchProductsQuery } from "@/redux/services/products";
 import ShiProcket from "../commonUse/shiprocket";
 import {
   changeSelectedProduct,
@@ -14,7 +15,8 @@ const SelectProduct = () => {
 
   const taboola_tracking = searchParams.get("tbclid");
 
-  
+  const { data } = useFetchProductsQuery({ id: "9565083402555" });
+  // console.log('data: ', data);
 
   const [subtotal, setSubtotal] = useState(0);
 
@@ -27,6 +29,9 @@ const SelectProduct = () => {
   const quantity = productInfo?.quantity;
   const allVariants = productInfo?.allVariants;
   const selectProducts = productInfo?.selectProducts;
+
+  const imageSrc = data?.images?.find((x) => String(x?.id) === String(selectProducts?.image_id))?.src;
+
 
   const handleChangeSingleVarient = (event) => {
     const variantId = event.target.value;
@@ -68,13 +73,17 @@ const SelectProduct = () => {
       <div className="max-w-5xl mx-auto  px-3  ">
         <div className="grid sm:grid-cols-2 items-center sm:gap-3">
           <div className="">
-            <img
-              src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f7e0bb49-6b41-487d-adcb-c7102b40d400/public"
-              alt="pic"
-              className="w-full "
-              loading="lazy"
-              id="buynow"
-            />
+            {imageSrc ? (
+              <img
+                src={imageSrc}
+                alt="pic"
+                className="w-full"
+                loading="lazy"
+                id="buynow"
+              />
+            ) : (
+              <p>Product image's not available</p> // This can be a fallback message or a placeholder image
+            )}
           </div>
 
           <div className="">
@@ -89,7 +98,7 @@ const SelectProduct = () => {
                 {parseInt(
                   ((selectProducts?.compare_at_price - selectProducts?.price) /
                     selectProducts?.compare_at_price) *
-                    100
+                  100
                 )}
                 % off
               </span>
@@ -136,9 +145,8 @@ const SelectProduct = () => {
                   </div>
                 )}
                 <div
-                  className={`border-2 rounded-lg border-red-500 p-2 sm:p-4 mb-4 sm:flex items-center justify-between gap-5 ${
-                    selectProducts.id === variant.id ? "activeStatus2" : ""
-                  }`}
+                  className={`border-2 rounded-lg border-red-500 p-2 sm:p-4 mb-4 sm:flex items-center justify-between gap-5 ${selectProducts.id === variant.id ? "activeStatus2" : ""
+                    }`}
                 >
                   <div
                     className={`flex items-center gap-3 ${key === 1 && "pt-5"}`}
@@ -157,7 +165,7 @@ const SelectProduct = () => {
                         {parseInt(
                           ((variant?.compare_at_price - variant?.price) /
                             variant?.compare_at_price) *
-                            100
+                          100
                         )}
                         % off)
                       </h3>

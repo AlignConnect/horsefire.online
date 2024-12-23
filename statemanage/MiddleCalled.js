@@ -202,7 +202,7 @@ const MiddleCalled = ({ children }) => {
         getStoreProductInfo({
           productsdata: products,
           allVariants: products?.variants,
-          selectProducts: products?.variants[1],
+          selectProducts: products?.variants[0],
         })
       );
     }
