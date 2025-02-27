@@ -1,10 +1,9 @@
 import dynamic from "next/dynamic";
 import React from "react";
-// import { Carousel } from 'react-responsive-carousel'
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SlCalender } from "react-icons/sl";
+import dayjs from "dayjs";
 
 
 
@@ -18,60 +17,64 @@ const Sec2 = dynamic(() => import("./Sec2"), {
 
 const Header = () => {
 
-  const carouselImage = [
-    "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/5ab6777d-5b2a-4eb0-a974-cae27ec66200/public",
-    "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/867a1634-c5e5-4785-1757-abf2e3c64200/public",
-    "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/fd01fe46-8e47-4ac8-ab70-1fcae07af100/public",
-    "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/2dcebc65-59f7-42e1-0c7d-9f9d15c01700/public",
-  ]
 
 
-  const settings = {
-    customPaging: function (i) {
-      return (
-        <div>
-          <img
-            src={carouselImage[i]}
-            alt={`Thumbnail ${i}`}
-            className="w-full mx-auto mih-h-[80px]"
-          />
-        </div>
-      );
-    },
-    dots: true,
-    dotsClass: "slick-dots slick-thumb slick-dots_custom h-[100px] sm:h-[170px]",
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    className: "h-[55vh] sm:h-[80vh]"
-  };
 
 
   return (
     <section className="">
 
-      <div className="fontNoto text-center font-semibold text-md md:text-sm pt-2 text-gray-500">
-        विज्ञापन-संबंधी
+      <div className="bg-[#F1F6F9] fontNoto text-center font-semibold text-md md:text-sm pt-2 text-gray-500 mb-4">
+        *विज्ञापन-संबंधी
       </div>
 
 
-      <Slider {...settings}>
 
-        {carouselImage.map((img, index) => (
-          <div key={index} className="">
-            <img src={img} alt={`Product ${index + 1}`} />
+      <div className="fontNoto text-xl md:text-2xl font-extrabold text-center py-1 px-1">
+        <span className="">&#x201C;</span>क्या आप भी एक ताकतवर मर्द की तरह अपना स्टैमिना और आंतरिक क्षमता बढ़ा कर दमदार प्रदर्शन करना चाहते है? अगर हाँ तोह आगे पढ़े।
+      </div>
+
+      <div className="py-4 px-2">
+        <img src="/main/hk_images/c2.jpg" alt="" className='sm:w-full w-full mx-auto !rounded-md' />
+      </div>
+
+
+      <div className=" border border-black  rounded-lg py-2 my-3 mx-2">
+
+
+        <div className="grid grid-cols-12 items-center justify-center gap-2">
+
+          <div className=" col-span-8 flex items-center gap-2 ">
+            <div className="pl-2">
+              <img src="/main/ht_images/Vinod.png" alt="" className='sm:w-18 w-12' />
+
+            </div>
+            <div className="">
+              <div className="font-semibold fontKalnia text-md md:text-lg">
+                Hitesh Kumar
+              </div>
+              <div className="fontPoppins text-black text-sm">
+                Age:- 29 Year
+              </div>
+            </div>
           </div>
-        ))}
+
+          <div className="col-span-4 mx-auto">
+            <div className='flex items-center gap-2 text-black'>
+              <div className='fontPoppins md:text-sm text-md font-semibold '>
+                Published on:
+              </div>
+            </div>
+            <div className='text-sm  fontPoppins flex items-center gap-1 text-black '>
+              <SlCalender className='' size={15} />&nbsp;
+              {dayjs().subtract(2, 'day').format("DD MMM YYYY")}
+            </div>
+          </div>
 
 
-      </Slider>
+        </div>
 
-
-
+      </div>
       <Sec1 />
       {/*  <Sec2 /> */}
     </section>

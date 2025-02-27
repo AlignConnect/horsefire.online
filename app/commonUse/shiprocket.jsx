@@ -156,7 +156,7 @@ const ShiProcket = () => {
       {loading && <ShipProcketLoader />}
 
       <button
-        className="relative w-[13rem] sm:w-[20rem] shoporder  shiprocketbutton text-center "
+        className="relative w-[13rem] sm:w-3/4 shoporder  shiprocketbutton text-center mx-auto"
         onClick={handleShiProcket}
       >
         <div className="relative">

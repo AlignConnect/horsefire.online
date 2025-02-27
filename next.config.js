@@ -57,6 +57,9 @@ const nextConfig = {
     NEXT_APP_URL_HTB: "https://horsefire.online/htb",
     NEXT_APP_API_KEY_HTB: "YhplGZFwQdESUOQEpghrhWWsjjdSOaWzYIREBNWwGADtiwMSlE",
 
+    NEXT_APP_URL_HTD: "https://horsefire.online/htd",
+    NEXT_APP_API_KEY_HTD: "mInkhFEgrCeyTrZzsEXwuCtOEgaLFgwzyTeIyIeXiUufeCmOmZ",
+
     NEXT_APP_URL_CK: "https://horsefire.online/ck",
     NEXT_APP_API_KEY_CK: "IWFMuxZcNpkxtwNidEVnLTvFSrMNFIfQcSkbCGkynKzNhsldyC",
 

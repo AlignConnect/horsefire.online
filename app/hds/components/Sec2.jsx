@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
 
-const PopUp = dynamic(() => import("./FormPop"), {
+const OrderBtn = dynamic(() => import("../components/orderNow"), {
   loading: () => <p>loader</p>,
 });
 
@@ -79,9 +79,38 @@ const Sec2 = () => {
       <div className="">
 
 
-        <div className=" text-black poppinsFont text-center  font-extrabold sm:text-[2vw] text-[1.6rem] w-full pt-4 leading-tight">
-          Heres What our
-          <br /> Customers Says
+
+        <div className="text-center text-2xl font-bold poppinsFont pb-4">Why Horse Fire Tablet</div>
+
+
+        <div className="grid grid-cols-2 items-center gap-3 w-[95%] sm:w-[90%] mx-auto">
+
+          {
+            FooterImage.map((e, key) => {
+
+              return <div className="text-center border py-5 rounded-xl" key={key}>
+
+                <div>
+                  <img src={e.img} alt="fdf" loading="lazy" className="mx-auto my-2 w-[70px]" />
+                </div>
+
+
+
+                <div>
+                  <p className="text-[14px] py-2 poppinsFont font-bold">{e.title}</p>
+                  <p className="text-[13px] poppinsFont px-2">{e.message}</p>
+                </div>
+
+              </div>
+
+            })
+          }
+
+        </div>
+
+
+        <div className=" text-black poppinsFont text-center  font-extrabold sm:text-[1.5vw] text-[1.6rem] w-full py-6 leading-tight">
+          Heres What our  Customers Says
         </div>
 
         <ReviewSection />
@@ -91,35 +120,7 @@ const Sec2 = () => {
 
         <div>
 
-          
 
-          <div className="text-center text-2xl font-bold poppinsFont pt-8 pb-4">Why Horse Fire Tablet</div>
-
-
-          <div className="grid grid-cols-2 items-center gap-3 w-[95%] sm:w-[90%] mx-auto">
-
-            {
-              FooterImage.map((e, key) => {
-
-                return <div className="text-center border py-5 rounded-xl"  key={key}>
-
-                  <div>
-                    <img src={e.img} alt="fdf" loading="lazy" className="mx-auto my-2 w-[70px]" />
-                  </div>
-
-
-
-                  <div>
-                    <p className="text-[14px] py-2 poppinsFont font-bold">{e.title}</p>
-                    <p className="text-[13px] poppinsFont px-2">{e.message}</p>
-                  </div>
-
-                </div>
-
-              })
-            }
-
-          </div>
 
 
           <div className="max-w-4xl mx-auto">
@@ -141,17 +142,10 @@ const Sec2 = () => {
                 />
               </a>
             </div> */}
-            <div className="p-2">
-              <div className="text-sm  pt-4 text-black poppinsFont">We accept Payment Via:-</div>
-              <img
-                src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/eecd9cfe-706a-4d7f-0556-a9f504eb7d00/public"
-                alt=""
-                className="w-72 pt-2"
-              />
-            </div>
+
           </div>
 
-          <PopUp/>
+          {/* <OrderBtn /> */}
 
           <div className="text-center mt-3 pb-5  bg-zinc-100">
             <img

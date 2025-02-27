@@ -5,27 +5,8 @@ import { useEffect, useState } from "react";
 import './components/Home.css'
 
 
-const FormPop = dynamic(() => import("./components/FormPop"), {
-    loading: () => <p>df</p>,
-});
-
-const AmaFlip = dynamic(() => import("./components/AmaFlip"), {
-    loading: () => <p>df</p>,
-});
 const Header = dynamic(() => import("./components/Header"), {
     loading: () => <p>Header Loading</p>,
-});
-
-const Story = dynamic(() => import("./components/Story"), {
-    loading: () => <p>Header Loading</p>,
-});
-
-const Last = dynamic(() => import("./components/Last"));
-const Component = dynamic(() => import("./components/Component"));
-const SelectProduct = dynamic(() => import("../commonUse/SelectProduct"));
-
-const CustomerReview = dynamic(() => import('./components/CustomerReview'), {
-    loading: () => <p>Loading</p>
 });
 
 const Sec2 = dynamic(() => import('./components/Sec2'))
@@ -55,21 +36,11 @@ const page = () => {
     return (
         <main className="fontPoppins bg-black">
             <title>Horse Fire Tablet</title>
-            <section className="max-w-xl mx-auto  text-black text-[1.1rem] sm:text-xl bg-white">
+            <section className="max-w-2xl mx-auto  text-black text-[1.1rem] sm:text-xl bg-white">
                 <Header />
-
-                <Story />
 
                 <Sec2 />
 
-                {/* <SelectProduct />
-                <Last />
-                <FormPop />
-
-
-                <Component />
-
-                <CustomerReview /> */}
 
                 <CustomFooterHTB />
 

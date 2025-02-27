@@ -244,6 +244,11 @@ export const handleCheckApiKey = () => {
         get_next_key = process.env.NEXT_APP_API_KEY_HTB;
         break;
 
+      case "/htd":
+        get_next_url = process.env.NEXT_APP_URL_HTD;
+        get_next_key = process.env.NEXT_APP_API_KEY_HTD;
+        break;
+
       case "/ck":
         get_next_url = process.env.NEXT_APP_URL_CK;
         get_next_key = process.env.NEXT_APP_API_KEY_CK;

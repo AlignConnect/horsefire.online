@@ -6,48 +6,13 @@ import { MdStarHalf, MdStarRate } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import ShiProcket from "../../commonUse/shiprocket";
 const SelectProduct = dynamic(() => import("../../commonUse/SelectProduct"));
+const OrderBtn = dynamic(() => import('../components/orderNow'));
 
 
 
 
 
 const Sec1 = () => {
-  const json1 = [
-    {
-      para1: "+3500",
-      para2: "Units Sold",
-      para3: "Per Day in India",
-    },
-    {
-      para1: "+3M",
-      para2: "Satisfied",
-      para3: "Customers & Counting",
-    },
-    {
-      para1: "96%",
-      para2: "Success Rate",
-      para3: "in Men's Problems",
-    },
-  ];
-
-  const json2 = [
-    {
-      img: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/85585491-de7c-4842-5024-1730e60cbb00/public",
-      para: "थकावट और अनुत्साह",
-    },
-    {
-      img: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/74b66d1f-b14f-4c24-5cd7-412636f92f00/public",
-      para: "ऊर्जा और शक्ति की कमी",
-    },
-    {
-      img: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/8fad8f6a-1cd1-483a-488a-cebdae97ea00/public",
-      para: "ढीला और कमजोर अंग",
-    },
-    {
-      img: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/52847318-ce78-4017-6b5f-1e9588604400/public",
-      para: "प्रेशर और ख़राब प्रदर्शन",
-    },
-  ];
 
 
 
@@ -77,122 +42,106 @@ const Sec1 = () => {
 
   const dispatch = useDispatch();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
-    <div className="pt-7 sm:pt-10">
+    <div className="pt-4 sm:pt-5">
 
 
 
-      <div className="text-center px-3 sm:px-2">
-        <p className="text-[2.3rem] sm:text-5xl inline-block  font-extrabold poppinsFont">Horse Fire Tablet
-        </p>
-
-
-        <p className="text-xl sm:text-lg font-semibold poppinsFont sm:py-5">
-          Ayurvedic Medicine For Strength, Stamina & Immunity
+      <div className=" px-3 sm:px-2">
+        <p className='px-2 py-1 text-justify indent-10 md:indent-0'>
+          मेरा नाम हितेश कुमार है, और मैं आपके सामने लाया हूँ अपने स्टेमिना और आतंरिक क्षमता बढ़ाने का आयुर्वेदिक तरीका।
         </p>
 
 
 
-        <div className="fontPoppins flex flex-wrap justify-center items-center sm:space-x-3 space-x-2 pt-3">
-          {/* Stars */}
-          <div className="flex sm:pb-0 pb-2 text-[#ffd203] ">
-            {Array.from({ length: 5 }, (_, index) => (
-              <MdStarRate
-                key={index}
-                color={
-                  index < Math.round(4.8) ? "gold" : "lightgray"
-                }
-                size={26}
-              />
-            ))}
+        <div className="pt-2 md:pt-4">
+          <div className="fontNoto text-xl md:text-3xl font-extrabold">
+            <span className="">&#x201C;</span>इस जड़ी-बूटियों से पाएं आयुर्वेदिक शक्ति:
           </div>
 
-          {/* Rating Text */}
-          <span className="sm:text-lg font-medium poppinsFont">Excellent</span>
+          <div className="bg-gray-200 rounded-md my-2" >
+            <ul className='text-black text-justify fontNoto text-[1.1rem] md:text-xl py-3 px-2 ms-8 list-disc'>
+              <li>
+                आपका वैवाहिक जीवन सुखी हो जायेगा
+              </li>
+              <li>
+                स्वपन दोष गायब हो जाएगा।
+              </li>
+              <li>
+                आतंरिक क्षमता बढ़ जाएगी।
+              </li>
+              <li>
+                आपका मानसिक जीवन बेहतर हो जाएगा।
+              </li>
+              <li>
+                आपको कभी निराश नहीं होना पड़ेगा।
+              </li>
+            </ul>
+          </div>
 
-          {/* Rating Value */}
-          <span className="sm:text-lg font-semibold poppinsFont">{4.8}</span>
+          <p className='py-2 font-semibold italic'>
+            मैं इसका सिर्फ वादा नहीं कर रहा हूँ, पर दिखा सकता हूँ, वैज्ञानिक प्रयोगों के माध्यम से।
+          </p>
 
-          {/* Divider */}
-          <span className="sm:text-lg">|</span>
+          <p className='text-justify py-2'>
+            आप पहली बार इस समस्या का सामना कर रहे हैं, या पहले इसे अन्य तरीकों से बेहतर करने की कई बार कोशिश कर चुके हैं - इससे कोई फर्क नहीं पड़ता। मेरे पास आपके लिए खुशखबरी है।
+          </p>
 
-          {/* Number of Reviews */}
-          <span className="sm:text-[15px] font-semibold poppinsFont ">59 reviews</span>
+          <div className=" py-2">
+            <img src="/main/hfs_images/sd2.jpg" alt="" className='w-full rounded-md ' />
+          </div>
 
-          {/* Trusted Reviews */}
-          <span className="text-sm text-gray-500 poppinsFont">trusted reviews</span>
+          <p className='text-justify py-1'>
+            यदि आपने पहले किन्हीं दवाओं के साथ इस समस्या को बेहतर करने की कोशिश की है, तो आप जानते हैं कि सभी प्रयास व्यर्थ रहे थे और यदि कोई प्रभाव हुआ भी, तो उससे केवल इरेक्शन में सुधार हुआ और वह भी बस अस्थायी तौर पर। अगर आप पहली बार इसका प्रयास कर रहे हैं तो आप भाग्यशाली हैं।
+          </p>
+
+
+
+          <OrderBtn />
+
+
+
+          <p className='text-justify py-2'>
+            अब आप सही तरीके के बारे में जान जाएँगे, और बहुत सारे पैसे बचा पाएंगे जो बेकार उत्पादों पर खर्च हो सकते थे। मैं आपको अपने सहायक राजेश की एक असली तस्वीर दिखाना चाहता हूँ। उसकी आतंरिक क्षमता बिल्कुल एक ताकतवर मर्द की तरह बढ़ गई, और वो अब अंदर से खुश भी रहने लगा है।
+          </p>
+
+          <div className=" py-2">
+            <img src="/main/hfs_images/pro_cup.jpg" alt="" className='w-full rounded-md ' />
+          </div>
+
+
+          <div className='text-center text-gray-600 pb-2 pt-2 font-semibold fontNoto md:text-md text-sm'>
+            <div>(इस का 2 हफ्तों तक प्रयोग करने के बाद यह प्रभाव सामने आया।)</div>
+          </div>
+
+          <div className="bg-gray-200 rounded-md my-2" >
+            <ul className='text-black fontNoto text-[1.1rem] md:text-xl py-3 px-2 ms-8 list-disc'>
+              <li>
+                उसका वैवाहिक जीवन सुधर गया है।
+              </li>
+              <li>
+                अब उसका स्टेमिना बढ़ गया है।
+              </li>
+              <li>
+                उसकी मानसिक स्थिति बेहतर हो गई है।
+              </li>
+              <li>
+                इरेक्शन लंबे समय तक बना रहता है, और पार्टनर के साथ रोमांस करने की उत्सुकता भी बनी रहती है।
+              </li>
+              <li>
+                उसकी कामेच्छा और टेस्टोस्टेरोन का स्तर बढ़ गया, और बिस्तर में रोमांस करने की क्षमता में बहुत सुधार हुआ है।
+              </li>
+            </ul>
+          </div>
+
+
+
+          {/* <p className='font-semibold'>
+                    राजेश पर हुए ये प्रभाव अचंभे की बात नहीं है।
+                </p> */}
+
         </div>
-
-
-
-        <div className="sm:px-2 text-left my-3 md:my-5">
-          {Benifits_brc([
-            {
-              img_benifits:
-                "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/2f0d9d4f-59e6-4c42-29cd-94602bd7ca00/public",
-              benifits_content:
-                "स्ट्रेंथ, एनर्जी और स्टैमिना बढ़ाने में मददगार ",
-            },
-            {
-              img_benifits:
-                "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1482b6ab-bf6d-459e-56d2-c33afa8c6f00/public",
-              benifits_content: "वैवाहिक जीवन खुशहाल बनाने में मददगार",
-            },
-
-            {
-              img_benifits:
-                "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/8d346116-5231-4b0f-c048-c13771eefd00/public",
-              benifits_content: "पूरे दिन जोश और ऊर्जा का एहसास",
-            },
-            {
-              img_benifits:
-                "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/2c37b911-de0d-49fe-3d53-8aa30fd9ec00/public",
-              benifits_content: " समय अवधि और कड़कपन बढ़ाने में मददगार",
-            },
-          ])}
-        </div>
-
-
-        <PopUp/>
-
-
+        {/* 
 
         <div className=" text-black text-start px-2 py-2 sm:p-4 rounded-lg sm:mt-4 mt-2 -mx-1 border border-yellow-800 border-dashed">
           <h3 className="text-lg font-semibold">OFFER</h3>
@@ -200,10 +149,10 @@ const Sec1 = () => {
             <li className="poppinsFont">Get {10}% instant discount on online payment</li>
             <li className="poppinsFont">COD available</li>
           </ul>
-        </div>
+        </div> */}
 
 
-
+        {/* 
         <div className="flex items-center py-2 space-x-2 mt-4 poppinsFont" id="buynow">
           <span className="text-gray-500 text-lg line-through">
             ₹{parseInt(selectProducts?.compare_at_price)}
@@ -219,23 +168,23 @@ const Sec1 = () => {
             )}
             % off
           </span>
-        </div>
+        </div> */}
 
         {/* Size Info */}
-        <div className="flex items-center my-2 poppinsFont">
+        {/* <div className="flex items-center my-2 poppinsFont">
           <span className="text-lg font-semibold">Size:</span>
           <span className="bg-red-100 text-red-600 font-semibold py-1 px-5  rounded-full ml-2">
             {selectProducts?.title}
           </span>
-        </div>
+        </div> */}
 
 
 
-
+        {/* 
         <h1 className="text-center sm:text-start text-[28px] sm:text-4xl font-bold mt-8 poppinsFont">Buy more ,Save more !</h1>
 
         <h1 className="text-gray-600 poppinsFont text-[16px] sm:text-lg sm:mt-3 text-center sm:text-start">Don't Miss out on these amazing deals!</h1>
-
+ */}
 
 
 

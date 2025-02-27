@@ -98,6 +98,12 @@ const BottomHandler = () => {
                     key: process.env.NEXT_APP_API_KEY_HTB
                 });
 
+            case "/htd":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_HTD,
+                    key: process.env.NEXT_APP_API_KEY_HTD
+                });
+
             case "/ck":
                 return setAp({
                     api: process.env.NEXT_APP_URL_CK,

@@ -16,7 +16,7 @@ const SelectProduct = () => {
   const taboola_tracking = searchParams.get("tbclid");
 
   const { data } = useFetchProductsQuery({ id: "9565083402555" });
-  // console.log('data: ', data);
+  console.log('data: ', data);
 
   const [subtotal, setSubtotal] = useState(0);
 
@@ -87,14 +87,19 @@ const SelectProduct = () => {
           </div>
 
           <div className="">
+
+            <div className="fontPoppins font-extrabold text-3xl py-2">
+              Horse Fire Tablets
+            </div>
+
             <div className="flex items-center py-2 space-x-2">
               <span className="text-gray-500 text-lg line-through">
                 ₹{parseInt(selectProducts?.compare_at_price)}
               </span>
               <span className="text-4xl font-extrabold text-gray-900">
-                <span>₹{parseInt(selectProducts?.price)}</span>
+                <span className="">₹{parseInt(selectProducts?.price)}</span>
               </span>
-              <span className="clip_off text-black text-sm font-semibold bg-yellow-300 px-4 py-0.5 ">
+              <span className="clip_off text-white text-sm font-semibold bg-red-700 px-4 py-0.5 ">
                 {parseInt(
                   ((selectProducts?.compare_at_price - selectProducts?.price) /
                     selectProducts?.compare_at_price) *
@@ -107,7 +112,7 @@ const SelectProduct = () => {
             {/* Size Info */}
             <div className="flex items-center my-2">
               <span className="text-lg font-semibold">Size:</span>
-              <span className="bg-yellow-100 text-yellow-600 font-semibold py-1 px-2 rounded-md ml-2">
+              <span className="bg-red-100  text-red-600 font-semibold py-1 px-2 rounded-md ml-2">
                 {selectProducts?.title}
               </span>
             </div>

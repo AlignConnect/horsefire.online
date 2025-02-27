@@ -59,7 +59,7 @@ const customFooter = () => {
                 <hr className='my-3' />
 
                 <div className='text-sm text-center pb-3 font-semibold'>
-                    Copyright ©2024 – All rights reserved
+                    Copyright ©2025 – All rights reserved
                 </div>
 
             </div>
