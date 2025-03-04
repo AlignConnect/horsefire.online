@@ -1,25 +1,39 @@
 "use client"
-import React, { useEffect } from 'react'
-import './components/home.css'
+import React from 'react'
+import './components/Home.css'
 import dynamic from 'next/dynamic';
+import { useEffect } from 'react';
 
 
 
-const Header = dynamic(() => import('./components/Header'));
-const Content = dynamic(() => import('./components/Content'));
-const FormData = dynamic(() => import('./components/FormData'));
-const Sec_content = dynamic(() => import('./components/Sec_content'));
-const Customer_exp_hfs = dynamic(() => import('./components/Customer_exp'));
-const Percentage = dynamic(() => import('./components/Percentage'));
-const Third_content = dynamic(() => import('./components/third_content'));
-
-const CustomerReview = dynamic(() => import('./components/CustomerReview'));
-
-const CustomFooterHTB = dynamic(() => import('./components/customFooter'));
-
-const FooterP = dynamic(() => import('@/app/commonUse/bottompopup/BottomHandler'));
+const Header = dynamic(() => import('./components/Header'), {
+    loading: () => <p>Header Loading</p>
+});
 
 
+const Story = dynamic(() => import('./components/Story'), {
+    loading: () => <p>Story Loading</p>
+});
+
+
+const CustomerReview = dynamic(() => import('./components/CustomerReview'), {
+    loading: () => <p>Loading</p>
+});
+
+
+
+const FormData = dynamic(() => import('./components/FormData'), {
+    loading: () => <p>Loading</p>
+});
+
+
+const CustomFooterHTB = dynamic(() => import('./components/customFooter'), {
+    loading: () => <p>Loading</p>
+});
+
+const FooterP = dynamic(() => import('@/app/commonUse/bottompopup/BottomHandler'), {
+    loading: () => <p>loader</p>
+});
 
 
 
@@ -31,27 +45,12 @@ const page = () => {
 
     }, [])
 
-
     return (
-        <div className='w-full md:max-w-4xl mx-auto bg-white'>
+        <div className='w-full md:max-w-4xl mx-auto bg-gray-100'>
 
             <Header />
 
-            <Content />
-
-            <div className="px-2">
-
-                <FormData />
-
-            </div>
-
-            <Sec_content />
-
-            <Customer_exp_hfs />
-
-            <Percentage />
-
-            <Third_content />
+            <Story />
 
             <FormData />
 
@@ -60,7 +59,6 @@ const page = () => {
             <CustomFooterHTB />
 
             <FooterP />
-
         </div>
     )
 }

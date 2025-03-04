@@ -1,98 +1,44 @@
-import dayjs from 'dayjs'
 import React from 'react'
-import { IoEyeSharp } from 'react-icons/io5'
-import { SlCalender } from 'react-icons/sl'
-
-
-
+import dayjs from "dayjs";
 const Header = () => {
     return (
-        <section>
+        <section className=''>
 
 
-            <div className="">
 
 
-                <div className="bg-[#F1F6F9] flex items-center justify-between px-3 py-4 my-2">
+            <div className="bg-gray-300 py-3 flex justify-between items-center px-3">
 
-                    <div className="fontPoppins font-semibold text-[#ff0000] text-[1.1rem] sm:text-2xl bg-black px-4 md:pt-1 sm:pb-1 rounded-[3px]">
-                        <span className='text-red-500'> HORSEFIRE</span> <span className='text-[#f8b548]'> TABLET</span>
+                <div className="flex items-center justify-center  gap-1 py-2">
+                    <div className="">
+                        <img src="/main/htb_images/p6.webp" alt="" className='w-16 md:w-20 mx-auto' />
                     </div>
-
-                    <div className="fontArya text-white font-semibold bg-green-600 px-3 md:text-2xl text-md rounded-[3px] pt-1">
-                        <a href="#form">
-                            अभी ऑर्डर करे
-                        </a>
-                    </div>
-                </div>
-
-
-
-                <hr className='my-3' />
-
-
-
-
-
-                <div className="fontNoto text-xl md:text-3xl font-extrabold text-center py-1 px-1">
-                    <span className="">&#x201C;</span>क्या आप भी एक ताकतवर मर्द की तरह अपना स्टैमिना और आंतरिक क्षमता बढ़ा कर दमदार प्रदर्शन करना चाहते है? अगर हाँ तोह आगे पढ़े।
-                </div>
-
-
-                <div className="px-2 py-2">
-                    <img src="/main/hfs_images/sad_couple.jpg" alt="" className='w-full rounded-md ' />
-                </div>
-
-
-                <div className=" border border-black  rounded-lg py-2 my-3 mx-2">
-
-
-                    <div className="grid grid-cols-12 items-center justify-center gap-2">
-
-                        <div className=" col-span-8 flex items-center gap-2 ">
-                            <div className="pl-2">
-                                <img
-                                    className='w-14 sm:w-20'
-                                    src="/main/hfs_images/hitesh.png"
-                                    alt='Hitesh'
-                                />
+                    <div className="">
+                        <div className="flex items-center gap-1">
+                            <div className="fontPoppins uppercase text-red-500 md:text-xl text-md font-extrabold">
+                                Horsefire Tablet
                             </div>
-                            <div className="">
-                                <div className="font-semibold fontKalnia text-md md:text-xl">
-                                    Hitesh Kumar
-                                </div>
-                                <div className="fontPoppins text-black text-sm">
-                                    Age:- 29 Year
-                                </div>
-                            </div>
+                            <img src="/main/home_images/verify.svg" alt="" className='w-4' />
                         </div>
-
-                        <div className="col-span-4 mx-auto">
-                            <div className='flex items-center gap-2 text-black'>
-                                <div className='fontNoto md:text-xl text-md font-semibold '>
-                                    *विज्ञापन-संबंधी
-                                </div>
-                            </div>
-                            <div className='text-sm  fontPoppins flex items-center gap-1 text-black '>
-                                <SlCalender className='' size={15} />&nbsp;
-                                {dayjs().subtract(1, 'day').format("DD MMM YYYY")}
-                            </div>
+                        <div className="fontPoppins text-black text-[0.7rem]">
+                            THE GOOD MEN SECRET
                         </div>
-
-
                     </div>
-
                 </div>
+                <div className="fontNoto text-center font-semibold text-md md:text-xl pt-2 text-gray-500">
+                    विज्ञापन-संबंधी
+                </div>
+            </div>
 
-                <p className='px-2 py-1 text-justify indent-10 md:indent-0'>
-                    मेरा नाम हितेश कुमार है, और मैं आपके सामने लाया हूँ अपने स्टेमिना और आतंरिक क्षमता बढ़ाने का आयुर्वेदिक तरीका।
-                </p>
-
-
+            <div className="fontNoto text-center text-2xl sm:text-4xl pt-4 sm:pt-8 font-extrabold px-2">
+                पार्टनर के साथ लम्बी पारी खेलना चाहते है तो ये जान लें!
             </div>
 
 
 
+
+
+            <hr className='my-3' />
 
         </section>
     )

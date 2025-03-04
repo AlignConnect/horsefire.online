@@ -98,7 +98,7 @@ const CustomerReview = () => {
                             }
 
                             {
-                                key === 12 &&
+                                key === 7 &&
                                 <img
                                     src="/main/htb_images/reviews/r_p_1.webp"
                                     loading='lazy'

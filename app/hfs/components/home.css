@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 
 .fontPoppins {
     font-family: 'Poppins', sans-serif;
@@ -12,13 +10,6 @@
 .fontNoto {
     font-family: 'Noto Serif Devanagari', sans-serif;
 }
-
-
-.fontPlayfair {
-    font-family: "Playfair Display", serif;
-}
-
-
 
 .fontKalnia {
     font-family: 'Kalnia', serif;
@@ -30,7 +21,7 @@
 
 body {
     font-family: 'Noto Serif Devanagari', sans-serif;
-    background-color: #eee;
+    background-color: black;
 }
 
 p {
@@ -63,116 +54,6 @@ p {
 @media (min-width: 700px) {
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
-}
-
-
-
-/* customer message  */
-.chat_block {
-    display: block;
-}
-
-.chat_block .chat_icon {
-    float: left;
-    width: 50px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-
-
-.chat_block div {
-    display: block;
-}
-
-.chat_block button {
-    display: block;
-
-}
-
-.chat_block img {
-    display: block;
-    width: 400px;
-    padding-top: 10px;
-}
-
-.chat_bubble {
-    display: block;
-    position: relative;
-    padding: 15px;
-    margin: 0 0 0;
-    color: #000;
-    background: #EADBC8;
-    border-radius: 10px;
-
-}
-
-.chat_bubble.left {
-    margin-left: 70px;
-    background: #EADBC8;
-}
-
-.chat_bubble:after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 50px;
-    width: 0;
-    border-width: 15px 15px 0;
-    border-style: solid;
-    border-color: #EADBC8 transparent;
-}
-
-.chat_bubble.left:after {
-    top: 28px;
-    left: -20px;
-    bottom: auto;
-    border-width: 10px 20px 10px 0;
-    border-color: transparent #EADBC8;
-}
-
-
-
-.ce_ixelgen_progress_bar {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.ce_ixelgen_progress_bar .progress_bar_item {
-    margin-bottom: 1rem;
-}
-
-.ce_ixelgen_progress_bar .item_label,
-.ce_ixelgen_progress_bar .item_value {
-    font-weight: 600;
-    color: #333;
-}
-
-.ce_ixelgen_progress_bar .item_value {
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.ce_ixelgen_progress_bar .item_bar {
-    position: relative;
-    height: 0.8rem;
-    width: 100%;
-    background-color: rgb(168, 166, 166);
-    border-radius: 4px;
-
-}
-
-.ce_ixelgen_progress_bar .item_bar .progress {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 0;
-    height: 0.8rem;
-    margin: 0;
-    background-color: green;
-    border-radius: 4px;
-    transition: width 2000 ease-in-out;
 }
