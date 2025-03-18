@@ -88,6 +88,29 @@ export default function RootLayout({ children }) {
         {` _tfa.push({notify: 'event', name: 'event_name', id: 1693731});  `}
       </Script>
 
+      {/*Criteo  Dynamic Loader */}
+      <Script
+        strategy="lazyOnload"
+        type="text/javascript"
+        src="//dynamic.criteo.com/js/ld/ld.js?a=110888"
+        async="true"
+      ></Script>
+      {/*Criteo  Dynamic Loader */}
+
+      {/*Criteo  Homepage code */}
+      <Script>
+        {`window.criteo_q = window.criteo_q || [];
+        var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+        window.criteo_q.push(
+          { event: "setAccount", account: 110888 },
+          { event: "setEmail", email: "##Email Address of User##" },
+          { event: "setSiteType", type: deviceType},
+          { event: "viewHome" }
+        );
+      `}
+      </Script>
+      {/*Criteo  Homepage code */}
+
       <body className={inter.className}>
         <GlobalContextProvider>
           <Wrapper>{children}</Wrapper>
