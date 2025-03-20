@@ -92,7 +92,7 @@ export default function RootLayout({ children }) {
       <Script
         strategy="lazyOnload"
         type="text/javascript"
-        src="//dynamic.criteo.com/js/ld/ld.js?a=110888"
+        src="//dynamic.criteo.com/js/ld/ld.js?a=119703"
         async="true"
       ></Script>
       {/*Criteo  Dynamic Loader */}
@@ -102,7 +102,7 @@ export default function RootLayout({ children }) {
         {`window.criteo_q = window.criteo_q || [];
         var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
         window.criteo_q.push(
-          { event: "setAccount", account: 110888 },
+          { event: "setAccount", account: 119703 },
           { event: "setEmail", email: "##Email Address of User##" },
           { event: "setSiteType", type: deviceType},
           { event: "viewHome" }
