@@ -17,7 +17,7 @@ const customFooter = () => {
                     <a href="https://bit.ly/3x4UA0m">
                         <img src="/main/htb_images/flipkart.png" alt="" className='sm:w-28 w-24 mx-auto' />
                     </a>
-                    <a href="https://amzn.to/3zNgXs3">
+                    <a href="https://amzn.to/4ebIvqO">
                         <img src="/main/htb_images/amazon.png" alt="" className='sm:w-24 w-20 mx-auto ' />
                     </a>
                 </div>
