@@ -73,17 +73,17 @@ const Formdata = () => {
                     let destination = decodeURI(data.destination)
                     let name = destination.split("?name=")[1].split("&")[0]
                     let phone = destination.split("&phone=")[1].split("&")[0]
-                    // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
-                    return openPopup();
+                    return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    // return openPopup();
                 }
                 setLoading(false);
-                // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
-                return openPopup();
+                return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                // return openPopup();
 
             } catch (err) {
                 setLoading(false);
-                // return window.location.href = checkoutDetail.checkoutUrl;
-                return openPopup();
+                return window.location.href = checkoutDetail.checkoutUrl;
+                // return openPopup();
 
             }
         } catch (error) {
@@ -120,7 +120,7 @@ const Formdata = () => {
                                     return <div className="flex flex-col" key={key}>
                                         <label className="font-semibold fontArya text-sm py-1">{data.label}</label>
                                         <div className="relative">
-                                            <input {...data.inputValue} className={`fontArya py-3 border border-solid border-black w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 ${data.icon ? 'pl-[3.5rem]' : ''}`} onChange={handleChange} value={CustomerData[data.inputValue.name]} />
+                                            <input {...data.inputValue} className={`fontArya p-3 border border-solid border-black w-full rounded-lg focus:outline-none focus:ring-2  focus:ring-red-500 ${data.icon ? 'pl-[3.5rem]' : ''}`} onChange={handleChange} value={CustomerData[data.inputValue.name]} />
                                             {data.icon && <span className="absolute ransform translate-x-[-50%] translate-y-[-50%] top-1/2 left-5 border-r border-black px-2">{data.icon}</span>}
                                         </div>
                                     </div>
