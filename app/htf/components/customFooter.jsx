@@ -13,11 +13,11 @@ const customFooter = () => {
                 </div>
 
 
-                <div className="flex justify-center items-center gap-7 py-3">
-                    <a href="https://bit.ly/3x4UA0m">
+                 <div className="flex justify-center items-center gap-7 py-3">
+                    <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d">
                         <img src="/main/htb_images/flipkart.png" alt="" className='sm:w-28 w-24 mx-auto' />
                     </a>
-                    <a href="https://amzn.to/4ebIvqO">
+                    <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1">
                         <img src="/main/htb_images/amazon.png" alt="" className='sm:w-24 w-20 mx-auto ' />
                     </a>
                 </div>

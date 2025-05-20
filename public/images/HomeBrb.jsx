@@ -53,7 +53,7 @@ export default function HomeBrb() {
         setOpenAds(true);
     };
     const handleCloseAds = () => {
-        window.location.href = "https://flipkart.la/3RAMfYv"
+        window.location.href = "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d"
         setOpenAds(false);
     };
     const [sc, setsc] = useState(0);
@@ -384,15 +384,7 @@ export default function HomeBrb() {
 
                 </section>
 
-                {/* <div className='pt-1 text-center align-items-center row m-auto'>
-                    <div className='col-12 text-center p-0'>
-                        <a href='https://flipkart.la/4853Bnr'><img src="/images/flip_amz_d.gif" alt="dsfsdf" style={{ width: WindowWidth > 768 ? "20%" : "100%" }} loading='lazy' /></a>
-                    </div>
-                </div> */}
 
-                {/* <div className='text-center mt-md-3 mb-md-5'>
-                    <img src="/images/partners.png" alt="" className='' style={{ width: WindowWidth > 768 ? "20%" : "90%" }} />
-                </div> */}
                 <div className="help_full mt-md-4 mb-md-5">
                     <div className="help_full_container" style={{ color: "white" }}>
 
@@ -649,13 +641,7 @@ export default function HomeBrb() {
                     </div>
 
 
-                    {/* <div className='pt-1 pb-3 text-center align-items-center row m-auto'>
-                        <div className='col-12 text-center p-0'>
-                            <a href='https://flipkart.la/4853Bnr'><img src="/images/flip_amz.gif" alt="dasfd" className='pb-3' style={{ width: WindowWidth > 768 ? "20%" : "100%" }} loading='lazy' /></a>
-                        </div>
-                    </div> */}
-
-
+            
                 </div >
 
                 <div>

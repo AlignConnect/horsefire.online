@@ -97,6 +97,11 @@ const nextConfig = {
 
     NEXT_APP_URL_HFM: "https://horsefire.online/hfm",
     NEXT_APP_API_KEY_HFM: "xvNwWJqBqjuiMvJgHhBorTsfVWLUnyENGIUvjFrAdELwUTEhBY",
+
+
+    
+    NEXT_APP_URL_HFP: "https://horsefire.online/hfp",
+    NEXT_APP_API_KEY_HFP: "zinSqJCNynijsAohrtXVeYyULYGlWJMlqpmUOebGmcwaiTzQcO",
   },
 
   images: {

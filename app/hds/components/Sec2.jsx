@@ -124,24 +124,6 @@ const Sec2 = () => {
 
 
           <div className="max-w-4xl mx-auto">
-            {/* <div className="text-sm  pt-4 text-black">We are available on:-</div>
-
-            <div className="flex items-center gap-7 py-2">
-              <a href="https://bit.ly/3JvDOKa">
-                <img
-                  src="/checkout_images/flipkart.png"
-                  alt=""
-                  className="sm:w-28 w-20 mx-auto"
-                />
-              </a>
-              <a href="https://amzn.to/49VCQC0">
-                <img
-                  src="/checkout_images//amazon.png"
-                  alt=""
-                  className="sm:w-24 w-20 mx-auto "
-                />
-              </a>
-            </div> */}
 
           </div>
 

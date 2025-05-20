@@ -6,26 +6,26 @@ const AmaFlipDialog = ({ flipcartlink, type }) => {
     const { isPopupOpen, closePopup } = useGlobalContext();
 
 
-    let checkoutUrl = "https://flipkart.la/3uLkXGV"
-    let closeurl = "https://flipkart.la/489K5Wg";
-    let amazonurl = null;
+    let checkoutUrl = "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d"
+    let closeurl = "https://arayurveda.shop/products/horse-fire-tablets";
+    let amazonurl = "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1";
 
 
     if (type == "ts") {
-        checkoutUrl = "https://flipkart.la/3vbpnaY"
-        closeurl = "https://flipkart.la/3U8RSQi";
-        amazonurl = null;
+        checkoutUrl = "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d"
+        closeurl = "https://arayurveda.shop/products/horse-fire-tablets";
+        amazonurl = "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1";
 
     }
     else if (type == "taboola") {
-        checkoutUrl = "https://bit.ly/3KvM9OP"
-        closeurl = "https://amzn.to/3zX3KwL";
-        amazonurl = 'https://amzn.to/3zNgXs3'
+         checkoutUrl = "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d"
+        closeurl = "https://arayurveda.shop/products/horse-fire-tablets";
+        amazonurl = "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1";
     }
     else {
-        checkoutUrl = "https://flipkart.la/3uLkXGV"
-        closeurl = "https://flipkart.la/489K5Wg";
-        amazonurl = null;
+         checkoutUrl = "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d"
+        closeurl = "https://arayurveda.shop/products/horse-fire-tablets";
+        amazonurl = "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1";
     }
 
 

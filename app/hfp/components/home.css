@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontBebas {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+    font-family: 'Arya', sans-serif;
+}
+
+.fontRighteous {
+    font-family: "Righteous", sans-serif;
+}
+
+.fontJosefin {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.fontMaamli {
+    font-family: "Ga Maamli", sans-serif;
+}
+
+
+.box_shaddow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+p {
+    font-size: large;
+    font-family: 'Noto Serif Devanagari', sans-serif;
+    text-align: justify;
+}
+
+@media (min-width: 700px) {
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+.order-now-animation {
+    animation: 0.5s sfr alternate infinite;
+  }
+  
+  @keyframes sfr {
+    0% {
+      scale: 110%;
+    }
+  
+    100% {
+      scale: 100%;
+    }
+  }
