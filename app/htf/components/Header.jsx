@@ -1,98 +1,111 @@
-import dayjs from 'dayjs'
 import React from 'react'
-import { IoEyeSharp } from 'react-icons/io5'
-import { SlCalender } from 'react-icons/sl'
-
 
 
 const Header = () => {
+
+
+
+    const why_recommendation = (arr) => {
+        return arr?.map((e, key) => {
+            return <div className='sm:flex  items-center sm:justify-center gap-3 py-2 ' key={key}>
+                <div className="">
+                    <img src={e.icon} className=" sm:w-full w-16 mx-auto" alt="icons" />
+                </div>
+                <div className='uppercase text-white fontJosefin font-semibold sm:text-[1vw] text-[0.8rem] sm:text-left text-center sm:pt-0 pt-2'>
+                    <div
+                        dangerouslySetInnerHTML={{ __html: e.title }}
+                    />
+                </div>
+            </div >
+        })
+    }
+
+
+
     return (
         <section>
 
 
-            <div className="">
+            <div className="bg_head px-2 sm:px-0">
+
+                <div className=' text-md bg-red-500 fontPoppins sm:py-1  text-center text-white'>
+
+                    <div className="flex items-center justify-center gap-1">
 
 
-                <div className="bg-[#F1F6F9] flex items-center justify-between px-3 py-4 my-2">
-
-                    <div className="fontPoppins font-semibold text-[#ff0000] text-[1.1rem] sm:text-2xl bg-black px-4 md:pt-1 sm:pb-1 rounded-[3px]">
-                        <span className='text-red-500'> HORSEFIRE</span> <span className='text-[#f8b548]'> TABLET</span>
+                        <div className="sm:text-md text-sm pt-1 ">
+                            *विज्ञापन-संबंधी
+                        </div>
                     </div>
 
 
-                    <div className='fontNoto md:text-xl text-md font-semibold '>
-                        *विज्ञापन-संबंधी
-                    </div>
                 </div>
 
+                <div className="sm:max-w-[80%] mx-auto ">
 
 
-                <hr className='my-3' />
+                    <div className="grid sm:grid-cols-2 items-center sm:py-16 py-5">
 
 
+                        <div className=" leading-tight">
 
-
-
-                <div className="fontNoto text-xl md:text-3xl font-extrabold text-center py-1 px-1">
-                    <span className="">&#x201C;</span>क्या आप भी एक ताकतवर मर्द की तरह अपना स्टैमिना और आंतरिक क्षमता बढ़ा कर दमदार प्रदर्शन करना चाहते है? अगर हाँ तोह आगे पढ़े।
-                </div>
-
-
-                <div className="px-2 py-2">
-                    <img src="/main/hfs_images/sad_couple.jpg" alt="" className='w-full rounded-md ' />
-                </div>
-
-
-                <div className=" border border-black  rounded-lg py-2 my-3 mx-2">
-
-
-                    <div className="grid grid-cols-12 items-center justify-center gap-2">
-
-                        <div className=" col-span-8 flex items-center gap-2 ">
-                            <div className="pl-2">
-                                <img
-                                    className='w-14 sm:w-20'
-                                    src="/main/hfs_images/hitesh.png"
-                                    alt='Hitesh'
-                                />
+                            <div className="fontBebas font-extrabold sm:text-[5.7vw] text-[3.5rem] text-center sm:text-left text-red-500 uppercase  leading-none py-2 ">
+                                <div className="">
+                                    horse fire <span className="text-black">tablet</span>
+                                </div>
                             </div>
-                            <div className="">
-                                <div className="font-semibold fontKalnia text-md md:text-xl">
-                                    Hitesh Kumar
+                            <div className="fontNoto text-black font-extrabold sm:text-[1.9vw] text-[1.4rem] leading-tight sm:text-left text-center sm:px-0 px-10 py-2">
+                                खुशहाल दाम्पत्य जीवन का आधार ज्यादा ऊर्जा ज्यादा प्यार
+                            </div>
+                            <div className="fontJosefin leading-tight font-semibold sm:py-2 sm:1  sm:text-left text-center">
+                                <div className='sm:text-[1.6vw] text-[1.1rem]'>Empower Your Vitality with Premium</div>
+                                <div className='sm:text-[1.8vw] text-[1.1rem]'>Ayurvedic Formulation for Men</div>
+                            </div>
+
+                            <div className="fontPoppins leading-tight font-semibold uppercase text-[#cf7819] sm:py-2 py-3 sm:text-left text-center">
+                                <div className='sm:text-[1.8vw] text-[1.4rem]'>Get upto <span className='sm:text-[2.8vw] text-[1.8rem] font-extrabold '>40% off</span></div>
+                            </div>
+
+                            <div className="text-left sm:block hidden">
+                                <a href="#form"><div className="pop_imagehfv cursor-pointer fontPoppins px-8 py-1 bg-black inline-block  text-white text-[1.2vw] font-semibold rounded hover:bg-gray-600 my-3 ">
+                                    ORDER NOW
                                 </div>
-                                <div className="fontPoppins text-black text-sm">
-                                    Age:- 29 Year
-                                </div>
+                                </a>
                             </div>
                         </div>
 
-                        <div className="col-span-4 mx-auto">
-                            <div className='flex items-center gap-2 text-black'>
-                                <div className="fontArya text-black font-semibold px-3 md:text-xl text-sm  pt-1">
-                                    <a href="#form">
-                                        अभी ऑर्डर करे
-                                    </a>
-                                </div>
-                            </div>
-                            <div className='text-[0.7rem]  fontPoppins flex items-center gap-1 text-black '>
-                                <SlCalender className='' size={15} />&nbsp;
-                                {dayjs().subtract(1, 'day').format("DD MMM YYYY")}
-                            </div>
-                        </div>
-
+                        <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/037f7ab6-36bd-4e2d-22d2-524beb5d3b00/public" alt="" className='sm:w-full w-full mx-auto' />
 
                     </div>
 
+
+
+
                 </div>
+                <div className="w-full sm:max-w-[85%] mx-auto pb-7">
+                    <div className="grid sm:grid-cols-3 grid-cols-3 justify-center items-center bg-red-500 sm:py-5 py-2 rounded-lg mx-1 ">
+                        {
+                            why_recommendation([
+                                {
+                                    icon: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/19244ddc-a345-4ff8-2f9a-005ec0259200/public",
+                                    title: "clinically<br/> approved"
+                                },
 
-                <p className='px-2 py-1 text-justify indent-10 md:indent-0'>
-                    मेरा नाम हितेश कुमार है, और मैं आपके सामने लाया हूँ अपने स्टेमिना और आतंरिक क्षमता बढ़ाने का आयुर्वेदिक तरीका।
-                </p>
+                                {
+                                    icon: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/4ee5ee83-b5c0-48aa-5d32-47cb7aa4ab00/public",
+                                    title: "Doctor<br/> recommended"
+                                },
+                                {
+                                    icon: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1a1f55b2-35f8-49af-4750-6809cd689200/public",
+                                    title: "100% natural<br/> product"
+                                },
 
+                            ])
+                        }
+                    </div>
 
+                </div>
             </div>
-
-
 
 
         </section>

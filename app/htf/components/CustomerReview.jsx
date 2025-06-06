@@ -67,7 +67,7 @@ const CustomerReview = () => {
                         break;
                 }
 
-                return <div key={key}>
+                return <div key={key} >
                     <div className={` my-5 p-2 rounded-md ${e.customer_name === "Nitya" ? "ml-[10%]" : ""}`} style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} key={key}>
                         <div className='flex justify-start align-items-center gap-2 mb-2 mt-2'>
 
@@ -137,7 +137,7 @@ const CustomerReview = () => {
 
     return (
         <section className='w-full md:py-7'>
-            <div className=' mx-auto w-full bg-white rounded-xl  overflow-hidden'>
+            <div className=' mx-auto w-full sm:max-w-4xl bg-white rounded-xl  overflow-hidden'>
                 <div className="px-2 pt-4 w-full">
                     <div className='fontPoppins text-2xl font-bold mb-4 text-center'>What Our <span className="text-red-600">Customer's Say</span></div>
                     <div className="text-center">

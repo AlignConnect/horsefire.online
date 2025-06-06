@@ -123,7 +123,7 @@ const Story = () => {
 
 
                 <p className='px-2 py-2 text-justify'>
-                    उन्होंने कहा कि horsefire tablet में इस्तेमाल किए गए विभिन्न आयुर्वेद तत्वों का शक्तिशाली मिश्रण उनकी सहनशक्ति में सुधार करने में मदद करता है। यह कोरियन जिनसेंग, लिकोरिस रूट, अश्वगंधा और सीप शैल अर्क जैसी जड़ी-बूटियों के साथ उन्नत विज्ञान और आयुर्वेद का एक बढ़िया मिश्रण है जो इसे अच्छा प्रोडक्ट बनता है।
+                    उन्होंने कहा कि horsefire tablet में इस्तेमाल किए गए विभिन्न आयुर्वेद तत्वों का शक्तिशाली मिश्रण उनकी सहनशक्ति में सुधार करने में मदद करता है। यह अश्वगंधा, शिलाजीत, सफ़ेद मूसली, गोखुरा और केसर जैसी जड़ी-बूटियों के साथ उन्नत विज्ञान और आयुर्वेद का एक बढ़िया मिश्रण है जो इसे अच्छा प्रोडक्ट बनता है।
 
                 </p>
 
@@ -139,7 +139,7 @@ const Story = () => {
 
 
                 <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/99aa7de9-4159-472c-fad1-90eb9f74eb00/public" alt="" className='w-3/4 mx-auto' />
-                
+
                 <div className=" bg-white dr_sdw mx-2 rounded-md leading-tight">
                     <div className=" text-[#329bd5] fontPoppins text-center sm:text-[2.2rem] text-[1rem] font-semibold py-2">
                         RECOMMENDED BY <span className=' text-[#194d87] font-semibold '>TRUSTED DOCTORS</span>

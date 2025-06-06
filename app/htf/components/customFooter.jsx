@@ -3,10 +3,10 @@ import React from 'react'
 
 const customFooter = () => {
     return (
-        <section className='mb-[5rem] sm:mb-0 bg-slate-200'>
+        <section className='mb-[5rem]  sm:mb-0 bg-slate-200'>
 
 
-            <div className="fontPoppins ">
+            <div className="fontPoppins sm:max-w-5xl mx-auto">
 
                 <div className='text-md text-center pt-4 font-semibold'>
                     We are Available:-
