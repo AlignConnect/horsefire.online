@@ -59,7 +59,7 @@ const third_content = () => {
             </p>
 
 
-            <div className="text-center py-3">
+            {/* <div className="text-center py-3">
                 <div className="fontNoto text-md font-extrabold text-black">
                     Old Price:- <strike className="fontPoppins font-semibold text-red-500"> ₹4000</strike>
                 </div>
@@ -68,9 +68,10 @@ const third_content = () => {
                     New Price:-<span className="fontPoppins font-semibold text-green-500"> ₹2300</span>
                 </div>
             </div>
+ */}
 
+            <img src="/main/hfs_images/p8.webp" alt="" className='md:w-1/2 w-5/6 mx-auto py-3' />
 
-            <img src="/main/hfs_images/pro3.webp" alt="" className='w-80 sm:w-3/6 mx-auto py-4' />
 
             <Order_Now />
 
