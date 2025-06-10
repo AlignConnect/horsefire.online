@@ -314,6 +314,11 @@ export const handleCheckApiKey = () => {
         get_next_key = process.env.NEXT_APP_API_KEY_HFP;
         break;
 
+      case "/phf":
+        get_next_url = process.env.NEXT_APP_URL_PHF;
+        get_next_key = process.env.NEXT_APP_API_KEY_PHF;
+        break;
+
       default:
         get_next_url = process.env.NEXT_APP_URL;
         get_next_key = process.env.NEXT_APP_API_KEY;
