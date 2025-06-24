@@ -192,6 +192,20 @@ const BottomHandler = () => {
                     key: process.env.NEXT_APP_API_KEY_PHF
                 });
 
+            case "/hfx":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_HFX,
+                    key: process.env.NEXT_APP_API_KEY_HFX
+                });
+
+
+            case "/rhf":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_RHF,
+                    key: process.env.NEXT_APP_API_KEY_RHF
+                });
+
+                
             default:
                 return setAp({
                     api: process.env.NEXT_APP_URL,

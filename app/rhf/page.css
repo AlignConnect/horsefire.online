@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap');
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+.poly {
+clip-path: inset(0px 2px 55px 0px);
+}
+
+.polyx {
+clip-path: inset(0px 2px 55px 0px);
+}
+

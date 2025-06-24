@@ -4,7 +4,7 @@ const most_selling_2 = () => {
     return (
         <div>
             <div className="bg-gray-300 py-5">
-                <div className="max-w-3xl mx-auto text-black px-3 sm:px-0">
+                <div className="max-w-3xl mx-auto text-black sm:px-0">
                     <p className="text-[8vw] sm:text-[3vw] fontAnton font-extrabold text-center ">PROUD TO BE</p>
                     <div className="text-lg sm:text-2xl text-center">
 

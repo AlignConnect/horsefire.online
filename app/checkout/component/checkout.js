@@ -319,6 +319,16 @@ export const handleCheckApiKey = () => {
         get_next_key = process.env.NEXT_APP_API_KEY_PHF;
         break;
 
+      case "/hfx":
+        get_next_url = process.env.NEXT_APP_URL_HFX;
+        get_next_key = process.env.NEXT_APP_API_KEY_HFX;
+        break;
+
+      case "/rhf":
+        get_next_url = process.env.NEXT_APP_URL_RHF;
+        get_next_key = process.env.NEXT_APP_API_KEY_RHF;
+        break;
+
       default:
         get_next_url = process.env.NEXT_APP_URL;
         get_next_key = process.env.NEXT_APP_API_KEY;

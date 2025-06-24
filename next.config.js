@@ -98,13 +98,18 @@ const nextConfig = {
     NEXT_APP_URL_HFM: "https://horsefire.online/hfm",
     NEXT_APP_API_KEY_HFM: "xvNwWJqBqjuiMvJgHhBorTsfVWLUnyENGIUvjFrAdELwUTEhBY",
 
-
-    
     NEXT_APP_URL_HFP: "https://horsefire.online/hfp",
     NEXT_APP_API_KEY_HFP: "zinSqJCNynijsAohrtXVeYyULYGlWJMlqpmUOebGmcwaiTzQcO",
-        
+
     NEXT_APP_URL_PHF: "https://horsefire.online/phf",
     NEXT_APP_API_KEY_PHF: "GsLeGzyUcoDEpMDQuKBBykHJUYViUSancjjgbortAymGumASLv",
+
+    NEXT_APP_URL_HFX: "https://horsefire.online/hfx",
+    NEXT_APP_API_KEY_HFX: "FbOcnCNPogWrgIpVBuehECHdSmuAVSruWtTUqjUUQTPekwAsNK",
+
+     
+    NEXT_APP_URL_RHF: "https://horsefire.online/rhf",
+    NEXT_APP_API_KEY_RHF: "SQHTOksmJzYrbRwMwVjHLcxSifIfvPMXTtElfrXlylbyDAksRu",
   },
 
   images: {
